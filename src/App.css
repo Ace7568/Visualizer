@@ -1,0 +1,150 @@
+
+.Instructions{
+  margin: 50px;
+}
+
+
+.Instructions div {
+  /* border: 1px solid rgb(12, 53, 71); */
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  position: relative;
+  top: 0.35em;
+  margin: 0 0.42em;
+}
+
+.start{
+  background-image: url(PathfindingVisualizer/Node/node_images/start.svg);
+  background-size: contain;
+  animation-name: specialNodes;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.target{
+  background-image: url(PathfindingVisualizer/Node/node_images/circle.svg);
+  background-size: contain;
+  animation-name: specialNodes;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.weight{
+  background-image: url(PathfindingVisualizer/Node/node_images/weight.svg);
+  background-size: contain;
+  animation-name: specialNodes;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Unvisited{
+  border: 1px solid rgba(102, 189, 215, 0.606);
+}
+
+.shortest{
+  background-color: rgb(255, 254, 106);
+  background-size: contain;
+  animation-name: specialNodes;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wall{
+  background-color: rgb(12, 53, 71);
+  background-size: contain;
+  animation-name: specialNodes;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.visited{
+  background-color: rgba(0, 190, 218, 0.75);
+  background-size: contain;
+  animation-name: specialNodes;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.Instructions ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Instructions ul li{
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+
+.line{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+@keyframes specialNodes{
+  0%{
+    transform: scale(0.4);
+  }
+  50% {
+      transform: scale(0.8);
+    }
+  
+  100% {
+      transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 480px){
+  .Instructions{
+    display: none;
+  }
+
+  .line{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-weight: 600;
+  }
+}

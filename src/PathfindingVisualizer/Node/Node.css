@@ -1,0 +1,184 @@
+.node{
+    width: 25px;
+    height: 25px;
+    outline: 1px solid rgba(102, 189, 215, 0.606);
+    display: inline-block;
+    margin: 0px 0px 0px;
+    background-color: white;
+}
+
+.node-start{
+    /* background-color: #39FF14; */
+    animation-name: weightanimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5;
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+    background-image: url(node_images/start.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.node-finish{
+    /* background-color: #FF3131; */
+    animation-name: weightanimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5;
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+    background-image: url(node_images/circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.node-visited{
+    /* background-color: aqua; */
+    outline: 1px solid rgb(175, 216, 248);
+    animation-name: visitedanimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    
+}
+
+.ShortestPath{
+    /* background-color: yellow; */
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    outline: 0;
+}
+
+/* .current-node{
+    background-color: rgb(172, 58, 164);
+} */
+
+.node-wall{
+    animation-name: node_wall;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    outline: 0;
+}
+
+.node.node-weight{
+  background-image: url("./node_images/weight.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: weightanimation;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+
+@keyframes visitedanimation{
+    0%{
+        transform: scale(0.2);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 100%;
+    }
+    50%{
+        background-color: rgba(17, 104, 217, 0.75);
+    }
+    75% {
+        transform: scale(1.2);
+        background-color: rgba(0, 217, 159, 0.75);
+      }
+    
+    100% {
+        transform: scale(1);
+        background-color: rgba(0, 190, 218, 0.75);
+      }
+}
+
+@keyframes weightanimation{
+  0%{
+    transform: scale(0.4);
+  }
+  50% {
+      transform: scale(0.8);
+    }
+  
+  100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes shortestPath {
+    0% {
+      transform: scale(0.6);
+      background-color: rgb(255, 254, 106);
+    }
+  
+    50% {
+      transform: scale(1.5);
+      background-color: rgb(255, 254, 106);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgb(255, 254, 106);
+    }
+  }
+
+  @keyframes node_wall{
+    0%{
+        transform: scale(0.8);
+        background-color: rgb(37, 47, 51);
+    }
+
+    50% {
+        transform: scale(0.9);
+        background-color: rgb(35, 35, 34);
+      }
+    
+    100%{
+        transform: scale(1);
+        background-color: rgb(12, 53, 71);
+    }
+  }
+
+  .node-visited.node-weight{
+    background-image: url("./node_images/weight.svg");
+    outline: 1px solid rgb(175, 216, 248);
+    animation-name: visitedanimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ShortestPath.node-weight{
+  /* background-color: yellow; */
+  background-image: url("./node_images/weight.svg");
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  outline: 0;
+}
+
