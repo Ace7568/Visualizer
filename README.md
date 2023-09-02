@@ -1,6 +1,6 @@
 # VISUALIZER
 
-## Algotithms used in these projects
+## Algotithms used in these project
 
 **Dijkstra's algorithm** - is an algorithm for finding the shortest paths between nodes in a weighted graph
 
