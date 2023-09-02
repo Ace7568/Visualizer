@@ -12,3 +12,8 @@
 
 
 
+## INSTRUCTIONS
+
+**WALLS** -> ***Drag*** through the nodes in the grid to add walls.
+
+**WEIGHTS** -> ***Press and hold W key*** and Drag through the nodes in the grid to add walls
